@@ -46,7 +46,7 @@
 1) Monte o comando SQL responsável pela criação da tabela de LIVRO:
 
 
-    resposta:
+resposta:
      
         CREATE TABLE LIVRO (
                  ID INTEGER PRIMARY KEY,
@@ -70,7 +70,8 @@ Retorno esperado:
 ```
 
 
-    resposta:
+resposta:
+    
         SELECT * FROM `LIVRO` WHERE AUTOR_ID = 1
 
 
@@ -88,7 +89,7 @@ Retorno esperado:
 +---------------+---------+
 ```
 
-    resposta:
+resposta:
     
         SELECT a.Nomes, COUNT(l.ID) AS Livros FROM AUTOR a LEFT JOIN LIVRO l ON a.Ids = l.AUTOR_ID AND YEAR(l.LANCAMENTO) = 2019 GROUP BY a.Nomes ORDER BY `a`.`Nomes` ASC
 
@@ -104,7 +105,7 @@ Retorno esperado:
 ```
 
 
-    resposta:
+resposta:
 
         SELECT `Ids`, a.Nomes FROM AUTOR a LEFT JOIN LIVRO l ON a.Ids = l.AUTOR_ID WHERE l.ID IS NULL;
 
