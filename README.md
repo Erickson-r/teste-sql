@@ -127,7 +127,7 @@ Retorno esperado:
 ```
 
 
-    resposta:
+resposta:
 
         SELECT `ID`, `NOME`, a.Ids, `LANCAMENTO`, a.Nomes FROM LIVRO l INNER JOIN AUTOR a ON l.AUTOR_ID = a.Ids
 
